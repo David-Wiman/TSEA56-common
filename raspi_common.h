@@ -17,4 +17,13 @@ typedef struct ReferenceStruct {
     enum drive_mode::DriveMode drive_mode;
 } reference_t;
 
+/* The data produced by ImageProcessingModule */
+typedef struct image_proc_t {
+    bool status_code = 0;
+    int lateral_position = 0;
+    int stop_distance = 0;
+    int angle_left = 0;
+    int angle_right = 0;
+} image_proc_t;
+
 #endif  // RASPICOMMON_H

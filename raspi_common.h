@@ -26,4 +26,11 @@ typedef struct image_proc_t {
     int angle_right = 0;
 } image_proc_t;
 
+/* The data produced by sensor module */
+typedef struct sensor_data_type {
+    int obstacle_distance = 0;
+    int driving_distance = 0;
+    int speed = 0;
+} sensor_data_t;
+
 #endif  // RASPICOMMON_H

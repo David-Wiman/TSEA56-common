@@ -21,7 +21,7 @@ namespace instruction {
 /* The simple instructions got from user interface in semi-auto mode
  * and generated from drive missions in auto mode. */
 typedef struct DriveInstruction {
-    enum instruction::InstructionNumber number instruction::stop;
+    enum instruction::InstructionNumber number = instruction::stop;
     std::string id = "none";
 } drive_instruction_t;
 

@@ -34,7 +34,7 @@ typedef struct ReferenceStruct {
 
 /* The data produced by ImageProcessingModule */
 typedef struct image_proc_t {
-    bool status_code = 0;
+    int status_code = 0;
     int lateral_position = 0;
     int stop_distance = 0;
     int angle_left = 0;

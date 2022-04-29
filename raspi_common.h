@@ -8,7 +8,7 @@
  * - auto_nominal: use semi-auto or auto instructions to drive
  * - auto_critical: same as above, but in an intersection or when image
  *   processing gave unreliable data. */
-namespace drive_mode {
+namespace regulation_mode {
     enum DriveMode {manual, auto_nominal, auto_critical};
 }
 
@@ -29,7 +29,7 @@ typedef struct DriveInstruction {
 typedef struct ReferenceStruct {
     int speed;
     int angle;
-    enum drive_mode::DriveMode drive_mode;
+    enum regulation_mode::DriveMode regulation_mode;
 } reference_t;
 
 /* The data produced by ImageProcessingModule */

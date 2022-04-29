@@ -23,15 +23,17 @@ inline int16_t restore_signed(uint16_t num) {
 #define STEERING_CUR_VEL          0xfff2
 #define STEERING_REF_VEL          0xfff3
 #define STEERING_CUR_LAT          0xfff4
-#define STEERING_REF_LAT          0xfff5
-#define STEERING_CUR_ANG          0xfff6
-#define STEERING_STEERING_KP      0xfff7
-#define STEERING_STEERING_KD      0xfff8
-#define STEERING_SPEED_KP         0xfff9
-#define STEERING_SPEED_KI         0xfffA
-#define STEERING_TURN_KP          0xfffB
-#define STEERING_TURN_KD          0xfffC
-#define STEERING_REGULATION_MODE  0xfffD
+#define STEERING_CUR_ANG          0xfff5
+#define STEERING_STEERING_KP      0xfff6
+#define STEERING_STEERING_KD      0xfff7
+#define STEERING_SPEED_KP         0xfff8
+#define STEERING_SPEED_KI         0xfff9
+#define STEERING_TURN_KP          0xfffA
+#define STEERING_TURN_KD          0xfffB
+#define STEERING_REGULATION_MODE  0xfffC
+
+#define STEERING_RETURN_GAS       0xfff0
+#define STEERING_RETURN_ANG       0xfff1
 
 #define SENSOR_OBSTACLE_DISTANCE      0xfff0
 #define SENSOR_LEFT_DRIVING_DISTANCE  0xfff1

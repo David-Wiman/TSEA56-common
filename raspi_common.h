@@ -48,4 +48,10 @@ typedef struct sensor_data_type {
     int speed = 0;
 } sensor_data_t;
 
+/* The data produced by steering module */
+typedef struct steer_data_type {
+    int gas = 0;
+    int steer_angle = 0;
+} steer_data_t;
+
 #endif  // RASPICOMMON_H

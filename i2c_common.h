@@ -32,6 +32,10 @@ inline int16_t restore_signed(uint16_t num) {
 #define STEERING_TURN_KD          0xfffB
 #define STEERING_REGULATION_MODE  0xfffC
 
+#define REGULATION_MODE_MANUAL       0
+#define REGULATION_MODE_AUTO_FORWARD 1
+#define REGULATION_MODE_AUTO_TURN    2
+
 #define STEERING_RETURN_GAS       0xfff0
 #define STEERING_RETURN_ANG       0xfff1
 

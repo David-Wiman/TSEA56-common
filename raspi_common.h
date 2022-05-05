@@ -3,13 +3,21 @@
 
 #include <string>
 
+extern "C" {
+    #include "i2c_common.h"
+}
+
 /* Drive modes for the car:
  * - manual: steer direct from user interface
  * - auto_nominal: use semi-auto or auto instructions to drive
  * - auto_critical: same as above, but in an intersection or when image
  *   processing gave unreliable data. */
 namespace regulation_mode {
-    enum DriveMode {manual, auto_nominal, auto_critical};
+    enum DriveMode {
+        manual = REGULATION_MODE_MANUAL,
+        auto_nominal = REGULATION_MODE_AUTO_FORWARD,
+        auto_critical = REGULATION_MODE_AUTO_TURN
+    };
 }
 
 namespace instruction {

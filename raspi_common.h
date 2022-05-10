@@ -22,7 +22,7 @@ namespace regulation_mode {
 
 namespace instruction {
     enum InstructionNumber {
-        left = 0, forward = 1, right = 2, stop = 3, wait = 4
+        left = 0, forward = 1, right = 2, stop = 3
     };
 }
 

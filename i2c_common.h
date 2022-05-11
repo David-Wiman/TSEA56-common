@@ -28,7 +28,7 @@ inline int16_t restore_signed(uint16_t num) {
 #define STEERING_STEERING_KD      0xfff7
 #define STEERING_SPEED_KP         0xfff8
 #define STEERING_SPEED_KI         0xfff9
-#define STEERING_TURN_KP          0xfffA
+#define STEERING_ANGLE_OFFSET     0xfffA
 #define STEERING_TURN_KD          0xfffB
 #define STEERING_REGULATION_MODE  0xfffC
 
